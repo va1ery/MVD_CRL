@@ -1,0 +1,67 @@
+﻿@page
+@model MVD_CRL.Pages.staff.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Сотрудники</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Сотрудники.Фио)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Сотрудники.Фио)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Сотрудники.Возраст)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Сотрудники.Возраст)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Сотрудники.Пол)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Сотрудники.Пол)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Сотрудники.Адрес)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Сотрудники.Адрес)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Сотрудники.Телефон)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Сотрудники.Телефон)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Сотрудники.ПаспортныеДанные)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Сотрудники.ПаспортныеДанные)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Сотрудники.КодДолжностиNavigation)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Сотрудники.КодДолжностиNavigation.КодДолжности)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Сотрудники.КодЗванияNavigation)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Сотрудники.КодЗванияNavigation.КодЗвания)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Сотрудники.КодСотрудника">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>
